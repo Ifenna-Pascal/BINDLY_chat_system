@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Auth from './Pages/Auth';
+import Lock from './Pages/Lock';
+import Chatscreen from './Pages/Chatscreen';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Switch>
+                <Route path="/auth" component={Auth} />
+                <Route path="/unlock" component={Lock} />
+                <Route path="/chat" component={Chatscreen} />
+            </Switch>
+        </Router>
+    );
 }
 
 export default App;
