@@ -157,4 +157,7 @@ export const Avart = styled.div`
     align-self: center;
     justify-self: center;
     text-align: center;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
 `;

@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function LeftNav() {
-    return (
-        <div>
-            
-        </div>
-    )
+    return <div></div>;
 }
 
-export default LeftNav
+export default LeftNav;
