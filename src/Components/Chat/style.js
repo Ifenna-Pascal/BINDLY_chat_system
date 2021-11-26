@@ -7,7 +7,8 @@ export const Icon = styled.div`
 
     &:hover {
         cursor: pointer;
-        background: gray;
+        background: #dcdcdc;
+        border-radius: 10px;
     }
 `;
 
