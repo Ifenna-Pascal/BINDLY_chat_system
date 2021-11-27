@@ -1,4 +1,5 @@
 import React from 'react';
+import Center from '../Components/Chat/Center';
 import LeftNav from '../Components/Chat/LeftNav';
 import { ChatSection, ChatWrapper } from './style';
 
@@ -7,6 +8,7 @@ function Chatscreen() {
         <ChatWrapper>
             <ChatSection>
                 <LeftNav />
+                <Center />
             </ChatSection>
         </ChatWrapper>
     );

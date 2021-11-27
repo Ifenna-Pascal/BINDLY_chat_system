@@ -5,7 +5,7 @@ import { LeftSection, LeftWrapper, Top, Center, Bottom } from './style';
 
 function LeftNav() {
     return (
-        <LeftWrapper>
+        <LeftWrapper width="6.3%">
             <LeftSection>
                 <Top>
                     <Logo />
