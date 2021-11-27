@@ -59,6 +59,7 @@ export const TopWrapper = styled.div`
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    margin-bottom: 1.3rem;
 `;
 export const TopText = styled(LogoText)`
     margin-bottom: 1rem;
@@ -106,4 +107,65 @@ export const CenterUser = styled.div`
         color: grey;
         padding: 0.2rem;
     }
+`;
+
+export const CenterBottomWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75%;
+    background: transparent;
+    overflow-y: scroll;
+    margin-bottom: 0.7rem;
+    &::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0;
+    }
+    h4 {
+        align-items: flex-start;
+        justify-self: flex-start;
+    }
+`;
+export const RecentBody = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    /* align-items: center; */
+    background: transparent;
+    text-align: left;
+    margin-top: -0.32rem;
+    flex-basis: 66%;
+    b {
+        text-align: left;
+        background: transparent;
+    }
+    span {
+        text-align: left;
+        background: transparent;
+    }
+`;
+export const Recents = styled.div`
+    display: flex;
+    height: 3rem;
+    justify-content: space-between;
+    background: transparent;
+    margin-bottom: 1.5rem;
+    width: 100%;
+`;
+export const RecentTime = styled.div`
+    background: transparent;
+    font-size: 0.8rem;
+`;
+export const RecentWrapper = styled.div`
+    background: transparent;
+    /* padding: 2rem 0; */
+    display: flex;
+    flex-direction: column;
+`;
+
+export const BottomText = styled(TopText)`
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: 1.7rem;
 `;

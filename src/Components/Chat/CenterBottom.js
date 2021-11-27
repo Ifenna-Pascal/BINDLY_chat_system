@@ -1,29 +1,32 @@
-import { Avatar } from '@material-ui/core'
+import { Avatar } from '@material-ui/core';
 import React from 'react';
-import {Recents, RecentBody, RecentTime, RecentWrapper, CenterBottomWrapper, TopText,} from "./style";
+import { recents } from '../../Util/Icons';
+import { Recents, RecentBody, RecentTime, RecentWrapper, CenterBottomWrapper, BottomText } from './style';
 
-const Recent = ({url, textb, text, time})=> {
+const Recent = ({ url, name, text, time }) => {
     return (
         <Recents>
-             <Avatar style={{ width: '2rem', height: '2rem' }} alt="Profile" src={url} />
-             <RecentBody>
-                 <b>{textb}</b>
-                 <span>{text}</span>
-            </RecentBody> 
+            <Avatar style={{ width: '2.3rem', height: '2.3rem' }} alt="Profile" src={url} />
+            <RecentBody>
+                <b>{name}</b>
+                <span>{text}</span>
+            </RecentBody>
             <RecentTime>{time}</RecentTime>
         </Recents>
-    )
-}
+    );
+};
 
 function CenterBottom() {
     return (
         <CenterBottomWrapper>
-            <TopText>Recent</TopText>
+            <BottomText>Recent</BottomText>
             <RecentWrapper>
-
+                {recents.map((recent, id) => (
+                    <Recent key={id} name={recent.name} text={recent.text} time={recent.time} url={recent.url} />
+                ))}
             </RecentWrapper>
         </CenterBottomWrapper>
-    )
+    );
 }
 
-export default CenterBottom
+export default CenterBottom;

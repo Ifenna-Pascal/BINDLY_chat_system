@@ -69,3 +69,54 @@ export const Users = [
         url: 'https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083379__480.jpg',
     },
 ];
+
+export const recents = [
+    {
+        text: 'Hey there how far',
+        time: '9:20pm',
+        name: 'Pascal',
+        url: 'https://cdn.pixabay.com/photo/2018/01/13/19/39/fashion-3080644__480.jpg',
+    },
+    {
+        text: 'Hey there how far',
+        time: '9:20pm',
+        name: 'Kosi',
+        url: 'https://cdn.pixabay.com/photo/2018/03/06/22/57/portrait-3204843__480.jpg',
+    },
+    {
+        text: 'Hey there how far',
+        time: '9:20pm',
+        name: 'Ifenna',
+        url: 'https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083379__480.jpg',
+    },
+    {
+        text: 'Hey there how far',
+        time: '9:20pm',
+        name: 'Sarah',
+        url: 'https://cdn.pixabay.com/photo/2016/03/26/20/35/young-man-1281282__480.jpg',
+    },
+    {
+        text: 'Hey there how far',
+        time: '9:20pm',
+        name: 'Mathew',
+        url: 'https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083379__480.jpg',
+    },
+    {
+        text: 'Hey there how far',
+        time: '9:20pm',
+        name: 'Pascal',
+        url: 'https://cdn.pixabay.com/photo/2019/12/16/14/46/black-man-4699506__480.jpg',
+    },
+    {
+        text: 'Hey there how far',
+        time: '9:20pm',
+        name: 'Mathew',
+        url: 'https://cdn.pixabay.com/photo/2017/11/02/14/36/model-2911363__480.jpg',
+    },
+    {
+        text: 'Hey there how far',
+        time: '9:20pm',
+        name: 'Pascal',
+        url: 'https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083379__480.jpg',
+    },
+];
